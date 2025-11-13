@@ -1,1 +1,1 @@
-console.log(CRUD)
+console.log(`CRUD`)
