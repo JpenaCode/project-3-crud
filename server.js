@@ -1,1 +1,1 @@
-console.log(`CRUD`)
+const Book = require('./models/book.js')
