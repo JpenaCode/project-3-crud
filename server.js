@@ -5,6 +5,16 @@ const dotenv = require('dotenv')
 dotenv.config()
 
 const express = require('express')
+<<<<<<< HEAD
+require('dotenv').config()
+const mongoose = require('mongoose')
+const app = express()
+/
+app.use(express.json())
+mongoose.connect(process.env.MONGODB_URI)
+mongoose.connection.on('connected', () => {
+  console.log('Connected to MongoDB')
+=======
 
 const app = express()
 
@@ -25,6 +35,7 @@ app.use(cors())
 
 
 app.post('/books', async (req, res) => {
+>>>>>>> 026075720672087145b3c402e9a22f897cf6ece0
 
     const createdBook = await Book.create(req.body)
     res.json(createdBook)
